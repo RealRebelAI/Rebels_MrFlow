@@ -10,26 +10,25 @@ loaders — anything that outputs a normal MODEL. No extra dependencies.
 
 # Examples
 - Krea-2 (1024)
-![output_00046](https://github.com/user-attachments/assets/c138d08e-d5aa-4476-83ed-931ad1490db2)
-![output_00045](https://github.com/user-attachments/assets/650e06bb-8b54-4036-b6c9-db8c1e788454)
-![output_00044](https://github.com/user-attachments/assets/5d166223-365a-4452-a727-4626a3d60052)
-![output_00043](https://github.com/user-attachments/assets/7c1c3484-55ff-4865-a6c4-a13058ace19b)
-![output_00042](https://github.com/user-attachments/assets/143576bd-9b94-473c-8a91-f3ea131adc56)
-![output_00041](https://github.com/user-attachments/assets/83999bb1-2b03-4fd5-a1cf-e83c1dd3a0e1)
-![output_00040](https://github.com/user-attachments/assets/6ed924e9-d48b-4625-8551-a378fd5cf455)
-![output_00039](https://github.com/user-attachments/assets/b80a4361-aeb6-4134-8b0c-3af117c644ec)
-![output_00038](https://github.com/user-attachments/assets/f5b60a6b-380c-4bd9-b18d-71f3e50ab9ec)
-![output_00037](https://github.com/user-attachments/assets/bd2f2bfb-1419-48e9-add2-0068f67e3242)
-![output_00036](https://github.com/user-attachments/assets/232e2c82-42e2-494b-b5db-72cdf302b44c)
-![output_00035](https://github.com/user-attachments/assets/ef88b306-260d-4c02-b60b-4004ddd40926)
-![output_00034](https://github.com/user-attachments/assets/657dfb0a-0b01-4e70-aa1c-b7d657d1dc5e)
-![output_00033](https://github.com/user-attachments/assets/d3033052-a7e4-4939-8cbb-a6438655144e)
-![output_00032](https://github.com/user-attachments/assets/d5b86858-2b46-461d-b127-b5de14da088b)
-![output_00031](https://github.com/user-attachments/assets/1ea7f636-12cf-4a74-9c44-e21035d46a10)
-![output_00030](https://github.com/user-attachments/assets/873e2fed-d777-48fc-8183-a4d7a00f7aa0)
-![output_00029](https://github.com/user-attachments/assets/2d73a4cc-6978-4d3d-9a4c-fd582397f2a1)
-![output_00047](https://github.com/user-attachments/assets/38ddd9f6-6f6f-4769-8a99-74107ca554fe)
-
+<img src="https://github.com/user-attachments/assets/c138d08e-d5aa-4476-83ed-931ad1490db2" width="400"/>
+<img src="https://github.com/user-attachments/assets/650e06bb-8b54-4036-b6c9-db8c1e788454" width="400"/>
+<img src="https://github.com/user-attachments/assets/5d166223-365a-4452-a727-4626a3d60052" width="400"/>
+<img src="https://github.com/user-attachments/assets/7c1c3484-55ff-4865-a6c4-a13058ace19b" width="400"/>
+<img src="https://github.com/user-attachments/assets/143576bd-9b94-473c-8a91-f3ea131adc56" width="400"/>
+<img src="https://github.com/user-attachments/assets/83999bb1-2b03-4fd5-a1cf-e83c1dd3a0e1" width="400"/>
+<img src="https://github.com/user-attachments/assets/6ed924e9-d48b-4625-8551-a378fd5cf455" width="400"/>
+<img src="https://github.com/user-attachments/assets/b80a4361-aeb6-4134-8b0c-3af117c644ec" width="400"/>
+<img src="https://github.com/user-attachments/assets/f5b60a6b-380c-4bd9-b18d-71f3e50ab9ec" width="400"/>
+<img src="https://github.com/user-attachments/assets/bd2f2bfb-1419-48e9-add2-0068f67e3242" width="400"/>
+<img src="https://github.com/user-attachments/assets/232e2c82-42e2-494b-b5db-72cdf302b44c" width="400"/>
+<img src="https://github.com/user-attachments/assets/ef88b306-260d-4c02-b60b-4004ddd40926" width="400"/>
+<img src="https://github.com/user-attachments/assets/657dfb0a-0b01-4e70-aa1c-b7d657d1dc5e" width="400"/>
+<img src="https://github.com/user-attachments/assets/d3033052-a7e4-4939-8cbb-a6438655144e" width="400"/>
+<img src="https://github.com/user-attachments/assets/d5b86858-2b46-461d-b127-b5de14da088b" width="400"/>
+<img src="https://github.com/user-attachments/assets/1ea7f636-12cf-4a74-9c44-e21035d46a10" width="400"/>
+<img src="https://github.com/user-attachments/assets/873e2fed-d777-48fc-8183-a4d7a00f7aa0" width="400"/>
+<img src="https://github.com/user-attachments/assets/2d73a4cc-6978-4d3d-9a4c-fd582397f2a1" width="400"/>
+<img src="https://github.com/user-attachments/assets/38ddd9f6-6f6f-4769-8a99-74107ca554fe" width="400"/>
 - Krea-2 (2048)
 
 ## Nodes
