@@ -48,7 +48,23 @@ loaders — anything that outputs a normal MODEL. No extra dependencies.
     <td><img src="https://github.com/user-attachments/assets/2d73a4cc-6978-4d3d-9a4c-fd582397f2a1" width="280"/></td>
   </tr>
 </table>
+
+
 - Krea-2 (2048)
+<img width="2048" height="2048" alt="output_00028_" src="https://github.com/user-attachments/assets/0d4bc4c2-74df-40a7-aa86-54931766b327" />
+<img width="2048" height="2048" alt="output_00027_" src="https://github.com/user-attachments/assets/cd2b479e-0722-4d92-abc1-2cf4528af2b7" />
+<img width="2048" height="2048" alt="output_00026_" src="https://github.com/user-attachments/assets/794d75a4-7395-4ae8-861c-26cffdd77b96" />
+<img width="2048" height="2048" alt="output_00025_" src="https://github.com/user-attachments/assets/a812dc22-4888-4625-aafa-49fb190e5dd9" />
+<img width="2048" height="2048" alt="output_00024_" src="https://github.com/user-attachments/assets/e83ef0ec-4f24-4ad6-9fd3-da1d87e8627a" />
+<img width="2048" height="2048" alt="output_00023_" src="https://github.com/user-attachments/assets/f293ab8d-e857-4c4c-8645-dea743dd4d20" />
+<img width="2048" height="2048" alt="output_00022_" src="https://github.com/user-attachments/assets/0bc69853-c182-4fac-b414-0ffe3e996683" />
+<img width="2048" height="2048" alt="output_00021_" src="https://github.com/user-attachments/assets/6d6ebb82-b383-4304-847f-6d2ce1f05492" />
+<img width="2048" height="2048" alt="output_00020_" src="https://github.com/user-attachments/assets/0a76d82b-daff-402a-a3b2-ddb66631e918" />
+<img width="2048" height="2048" alt="output_00019_" src="https://github.com/user-attachments/assets/3945ceb8-08f4-4c44-a86f-11e29fd47a93" />
+<img width="2048" height="2048" alt="output_00018_" src="https://github.com/user-attachments/assets/38a5a169-3f6e-49f2-bb80-c53cbf4614c0" />
+
+
+
 
 ## Nodes
 
@@ -85,12 +101,11 @@ when refine steps > 1).
 
 ## Notes
 
-- Use a real SR model for stage 2 (RealESRGAN x2 for 1024, 4x_foolhardy_Remacri for 2048).
+- Use a real SR model for stage 2 (RealESRGAN x2 for 1024)
   Plain latent upscaling defeats the whole method.
   
   - grab `RealESRGAN_x2plus.pth` from the [official releases page](https://huggingface.co/rklaumbach/RealESRGAN_x2/blob/main/RealESRGAN_x2.pth)
-    
-  - grab `4x_foolhardy_remacri` from the [official release page](https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/blob/main/4x_foolhardy_Remacri.pth)
+  
 
   and place it in `ComfyUI/models/upscale_models/` yourself.
   
