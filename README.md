@@ -43,7 +43,7 @@ when refine steps > 1).
 
 ## Notes
 
-- Use a real SR model for stage 2 (RealESRGAN x2 recommended, per the paper).
+- Use a real SR model for stage 2 (RealESRGAN x2 for 1024, 4x_foolhardy_Remacri for 2048).
   Plain latent upscaling defeats the whole method.
 - The Qwen `reference_latents` attach from upstream is intentionally omitted —
   it's a Qwen-Image-specific conditioning mechanism that Z-Image and Krea-2 don't use.
