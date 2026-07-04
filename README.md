@@ -10,12 +10,10 @@ loaders — anything that outputs a normal MODEL. No extra dependencies.
 
 # Examples
 - Krea-2 (1024)
-<img width="1024" height="1024" alt="output_00029_" src="https://github.com/user-attachments/assets/15d39b69-0ebd-4dfa-96e1-d077c6d7fc74" />
-<img width="1024" height="1024" alt="output_00030_" src="https://github.com/user-attachments/assets/a5afb3d3-336f-4309-b0f5-b16a2a65ece6" />
-<img width="1024" height="1024" alt="output_00031_" src="https://github.com/user-attachments/assets/4825990f-91b0-4e5c-8d92-602e080020b4" />
-<img width="1024" height="1024" alt="output_00032_" src="https://github.com/user-attachments/assets/95382a87-5ee5-400f-8b00-28e6b379abf7" />
-<img width="1024" height="1024" alt="output_00034_" src="https://github.com/user-attachments/assets/903010ce-928e-4c54-b3f5-c495ac60544f" />
-<img width="1024" height="1024" alt="output_00033_" src="https://github.com/user-attachments/assets/f3683d37-9004-44bd-b139-f89102016b10" />
+
+
+
+
 
 
 
