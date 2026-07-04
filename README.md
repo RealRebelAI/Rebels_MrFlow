@@ -10,44 +10,20 @@ loaders — anything that outputs a normal MODEL. No extra dependencies.
 
 # Examples
 - Krea-2 (1024)
-<img width="1024" height="1024" alt="output_00046_" src="https://github.com/user-attachments/assets/c7a20973-d538-400d-85bd-40ccc90ec0f1" />
-<img width="1024" height="1024" alt="output_00045_" src="https://github.com/user-attachments/assets/de591deb-dbdb-4255-a7f1-9b4ef7018180" />
-<img width="1024" height="1024" alt="output_00044_" src="https://github.com/user-attachments/assets/dc07eba3-0a6c-467f-9583-6d57667e732b" />
-<img width="1024" height="1024" alt="output_00043_" src="https://github.com/user-attachments/assets/76c2c693-2628-4d52-8794-cd5d76774e18" />
-<img width="1024" height="1024" alt="output_00042_" src="https://github.com/user-attachments/assets/ced8d9db-750e-419e-8400-c61305774f7d" />
-<img width="1024" height="1024" alt="output_00041_" src="https://github.com/user-attachments/assets/7a22909f-63c8-48ed-aea8-d6866d11b916" />
-<img width="1024" height="1024" alt="output_00040_" src="https://github.com/user-attachments/assets/0878367d-560f-47b0-92a3-d5fcbcb1552a" />
-<img width="1024" height="1024" alt="output_00039_" src="https://github.com/user-attachments/assets/f527834e-b225-476e-b14d-e080a2749d7c" />
-<img width="1024" height="1024" alt="output_00038_" src="https://github.com/user-attachments/assets/4b143ad3-ebb5-47f0-afc9-aee7dd3987f6" />
-<img width="1024" height="1024" alt="output_00037_" src="https://github.com/user-attachments/assets/629876aa-7468-4399-9368-e51242731580" />
-<img width="1024" height="1024" alt="output_00036_" src="https://github.com/user-attachments/assets/3d74bec9-d080-43f5-9dbe-2c30de93dca6" />
-<img width="1024" height="1024" alt="output_00035_" src="https://github.com/user-attachments/assets/65a2d4ee-aed8-4d2f-8300-71c7ffef73c2" />
-<img width="1024" height="1024" alt="output_00034_" src="https://github.com/user-attachments/assets/24e4f177-633e-4403-9b49-cce29af08037" />
-<img width="1024" height="1024" alt="output_00033_" src="https://github.com/user-attachments/assets/c762889d-fb2f-4440-b7d7-267669ba256b" />
-<img width="1024" height="1024" alt="output_00032_" src="https://github.com/user-attachments/assets/9c104f0a-acef-447c-af9a-837bb41be633" />
-<img width="1024" height="1024" alt="output_00031_" src="https://github.com/user-attachments/assets/0810e7e6-fde4-46db-959b-bdf8aca4c430" />
-<img width="1024" height="1024" alt="output_00030_" src="https://github.com/user-attachments/assets/7210a44a-c743-4003-82fa-28e0469bd5fc" />
-<img width="1024" height="1024" alt="output_00029_" src="https://github.com/user-attachments/assets/45d1bde5-c3a3-4ae4-8efc-bafbbbfcc025" />
-<img width="1024" height="1024" alt="output_00047_" src="https://github.com/user-attachments/assets/585719aa-06fb-4cd0-bd60-97b67eabb4f0" />
+<img width="1024" height="1024" alt="output_00029_" src="https://github.com/user-attachments/assets/15d39b69-0ebd-4dfa-96e1-d077c6d7fc74" />
+<img width="1024" height="1024" alt="output_00030_" src="https://github.com/user-attachments/assets/a5afb3d3-336f-4309-b0f5-b16a2a65ece6" />
+<img width="1024" height="1024" alt="output_00031_" src="https://github.com/user-attachments/assets/4825990f-91b0-4e5c-8d92-602e080020b4" />
+<img width="1024" height="1024" alt="output_00032_" src="https://github.com/user-attachments/assets/95382a87-5ee5-400f-8b00-28e6b379abf7" />
+
+
+
+
 
 
 
 
 - Krea-2 (2048)
-<img width="2048" height="2048" alt="output_00066_" src="https://github.com/user-attachments/assets/67ae1d77-c726-4d0c-b66d-2f4d733d145a" />
-<img width="2048" height="2048" alt="output_00065_" src="https://github.com/user-attachments/assets/c2e96932-111e-4d1b-b203-579f2e0ee186" />
-<img width="2048" height="2048" alt="output_00064_" src="https://github.com/user-attachments/assets/40b0ba0f-c3eb-4a99-bc0d-70b0cb712746" />
-<img width="2048" height="2048" alt="output_00063_" src="https://github.com/user-attachments/assets/eda14123-7dc6-4d55-aa2e-2ce89697cd8d" />
-<img width="2048" height="2048" alt="output_00062_" src="https://github.com/user-attachments/assets/9960ef93-708a-44fb-a5a0-3d7de5c38a5c" />
-<img width="2048" height="2048" alt="output_00061_" src="https://github.com/user-attachments/assets/8100568f-78be-453c-bed8-c0104b9b65c2" />
-<img width="2048" height="2048" alt="output_00060_" src="https://github.com/user-attachments/assets/3ac52328-9f33-4d02-be9e-3b4fc441945e" />
-<img width="2048" height="2048" alt="output_00059_" src="https://github.com/user-attachments/assets/73a9a5c5-a37e-46df-819e-c2920add0fef" />
-<img width="2048" height="2048" alt="output_00072_" src="https://github.com/user-attachments/assets/9dd459e6-44f8-4e5d-84c8-e72712fc00c6" />
-<img width="2048" height="2048" alt="output_00071_" src="https://github.com/user-attachments/assets/cdbf8abc-0159-436d-bf97-53a3ee087d32" />
-<img width="2048" height="2048" alt="output_00070_" src="https://github.com/user-attachments/assets/cd5dc6d7-1619-4b9b-b457-218878914012" />
-<img width="2048" height="2048" alt="output_00069_" src="https://github.com/user-attachments/assets/1abeedeb-df5c-45bd-b662-accf4b399b6b" />
-<img width="2048" height="2048" alt="output_00068_" src="https://github.com/user-attachments/assets/8ccbe2e2-da07-43d7-ad2e-f59792e2aea6" />
-<img width="2048" height="2048" alt="output_00067_" src="https://github.com/user-attachments/assets/c7a176d4-b2c2-43b9-ae30-bd98fd55efda" />
+
 
 
 
