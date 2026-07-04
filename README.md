@@ -46,8 +46,8 @@ when refine steps > 1).
 - Use a real SR model for stage 2 (RealESRGAN x2 for 1024, 4x_foolhardy_Remacri for 2048).
   Plain latent upscaling defeats the whole method.
   
-      -grab `RealESRGAN_x2plus.pth` from the [official releases page](https://huggingface.co/rklaumbach/RealESRGAN_x2/blob/main/RealESRGAN_x2.pth) and place it in `ComfyUI/models/upscale_models/` yourself.
-      -grab `4x_foolhardy_remacri` from the [official release page](https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/blob/main/4x_foolhardy_Remacri.pth)
+  -grab `RealESRGAN_x2plus.pth` from the [official releases page](https://huggingface.co/rklaumbach/RealESRGAN_x2/blob/main/RealESRGAN_x2.pth) and place it in `ComfyUI/models/upscale_models/` yourself.
+  -grab `4x_foolhardy_remacri` from the [official release page](https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/blob/main/4x_foolhardy_Remacri.pth)
   
 - The Qwen `reference_latents` attach from upstream is intentionally omitted —
   it's a Qwen-Image-specific conditioning mechanism that Z-Image and Krea-2 don't use.
