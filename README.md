@@ -70,7 +70,7 @@ loaders — anything that outputs a normal MODEL. No extra dependencies.
 3. **KSampler (stage 1)** — your normal model/CLIP/VAE loaders, steps ← `stage1_steps`,
    cfg ← `cfg`, sampler `euler`, scheduler `simple`, denoise 1.0.
 4. **VAE Decode** stage-1 latent.
-5. **Load Upscale Model** — RealESRGAN x2 for 1024 or 4x_foolhardy_Remacri for 2048 → **Mr. Flow Upscale + Encode**
+5. **Load Upscale Model** — RealESRGAN x2 for 1024 → **Mr. Flow Upscale + Encode**
    with the decoded image, your VAE, and `target_width/height` from preset.
 6. **Refine node** — same model + conditioning as stage 1, `prepared_latent` in,
    steps ← `refine_steps`, denoise ← `refine_denoise`, cfg ← `cfg`, sampler `euler`.
