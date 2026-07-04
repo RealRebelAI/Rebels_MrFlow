@@ -13,8 +13,8 @@ loaders — anything that outputs a normal MODEL. No extra dependencies.
 # Examples
 <table>
   <tr>
-    <th>1024</th>
-    <th>2048</th>
+    <th>Krea-2 - 1024</th>
+    <th>Krea-2 - 2048</th>
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/06050fd0-684a-402e-bd33-03da89e41d1b" width="350"/></td>
