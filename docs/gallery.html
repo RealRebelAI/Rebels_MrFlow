@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rebels MrFlow — Gallery</title>
+<style>
+  :root {
+    --bg: #0d0f12;
+    --panel: #16191d;
+    --accent: #ff7a1a;
+    --text: #eaeaea;
+    --muted: #9aa0a6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 32px 16px 60px;
+  }
+  h1 {
+    font-size: 1.4rem;
+    margin: 0 0 4px;
+    letter-spacing: 0.02em;
+  }
+  p.sub {
+    color: var(--muted);
+    margin: 0 0 28px;
+    font-size: 0.95rem;
+  }
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    background: var(--panel);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+  }
+  .stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    touch-action: pan-y;
+  }
+  .stage img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+  }
+  .stage img.active {
+    opacity: 1;
+  }
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.55);
+    border: none;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: background 0.15s ease;
+  }
+  .nav-btn:hover { background: var(--accent); }
+  .nav-btn.prev { left: 14px; }
+  .nav-btn.next { right: 14px; }
+  .controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 14px;
+    gap: 12px;
+  }
+  .counter {
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  .dots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    flex: 1;
+  }
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3a3f45;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .dot.active {
+    background: var(--accent);
+    transform: scale(1.3);
+  }
+  .thumbs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    margin-top: 16px;
+    padding-bottom: 4px;
+    max-width: 900px;
+    width: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--panel);
+  }
+  .thumbs::-webkit-scrollbar { height: 6px; }
+  .thumbs::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+  .thumb {
+    flex: 0 0 auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.55;
+    transition: opacity 0.15s ease, border-color 0.15s ease;
+  }
+  .thumb.active {
+    opacity: 1;
+    border-color: var(--accent);
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+  }
+  .hint {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 18px;
+    text-align: center;
+  }
+  kbd {
+    background: #24282e;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.75rem;
+    border: 1px solid #3a3f45;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Rebels MrFlow — Output Gallery</h1>
+  <p class="sub">19 samples · use arrows, thumbnails, swipe, or the keyboard</p>
+
+  <div class="slider">
+    <div class="stage" id="stage">
+      <!-- images injected here -->
+    </div>
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous image">&#10094;</button>
+    <button class="nav-btn next" id="nextBtn" aria-label="Next image">&#10095;</button>
+
+    <div class="controls-row">
+      <span class="counter" id="counter">1 / 19</span>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+
+  <div class="thumbs" id="thumbs"></div>
+
+  <p class="hint">
+    <kbd>&#8592;</kbd> / <kbd>&#8594;</kbd> to navigate &nbsp;·&nbsp; swipe on mobile &nbsp;·&nbsp; click a thumbnail to jump
+  </p>
+
+<script>
+  const images = [
+    "https://github.com/user-attachments/assets/c138d08e-d5aa-4476-83ed-931ad1490db2",
+    "https://github.com/user-attachments/assets/650e06bb-8b54-4036-b6c9-db8c1e788454",
+    "https://github.com/user-attachments/assets/5d166223-365a-4452-a727-4626a3d60052",
+    "https://github.com/user-attachments/assets/7c1c3484-55ff-4865-a6c4-a13058ace19b",
+    "https://github.com/user-attachments/assets/143576bd-9b94-473c-8a91-f3ea131adc56",
+    "https://github.com/user-attachments/assets/83999bb1-2b03-4fd5-a1cf-e83c1dd3a0e1",
+    "https://github.com/user-attachments/assets/6ed924e9-d48b-4625-8551-a378fd5cf455",
+    "https://github.com/user-attachments/assets/b80a4361-aeb6-4134-8b0c-3af117c644ec",
+    "https://github.com/user-attachments/assets/f5b60a6b-380c-4bd9-b18d-71f3e50ab9ec",
+    "https://github.com/user-attachments/assets/bd2f2bfb-1419-48e9-add2-0068f67e3242",
+    "https://github.com/user-attachments/assets/232e2c82-42e2-494b-b5db-72cdf302b44c",
+    "https://github.com/user-attachments/assets/ef88b306-260d-4c02-b60b-4004ddd40926",
+    "https://github.com/user-attachments/assets/657dfb0a-0b01-4e70-aa1c-b7d657d1dc5e",
+    "https://github.com/user-attachments/assets/d3033052-a7e4-4939-8cbb-a6438655144e",
+    "https://github.com/user-attachments/assets/d5b86858-2b46-461d-b127-b5de14da088b",
+    "https://github.com/user-attachments/assets/1ea7f636-12cf-4a74-9c44-e21035d46a10",
+    "https://github.com/user-attachments/assets/873e2fed-d777-48fc-8183-a4d7a00f7aa0",
+    "https://github.com/user-attachments/assets/2d73a4cc-6978-4d3d-9a4c-fd582397f2a1",
+    "https://github.com/user-attachments/assets/38ddd9f6-6f6f-4769-8a99-74107ca554fe"
+  ];
+
+  let current = 0;
+  const stage = document.getElementById('stage');
+  const dotsWrap = document.getElementById('dots');
+  const thumbsWrap = document.getElementById('thumbs');
+  const counter = document.getElementById('counter');
+
+  images.forEach((src, i) => {
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = `output ${i + 1}`;
+    img.loading = i === 0 ? 'eager' : 'lazy';
+    if (i === 0) img.classList.add('active');
+    stage.appendChild(img);
+
+    const dot = document.createElement('button');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+
+    const thumb = document.createElement('div');
+    thumb.className = 'thumb' + (i === 0 ? ' active' : '');
+    thumb.innerHTML = `<img src="${src}" alt="thumb ${i + 1}" loading="lazy">`;
+    thumb.addEventListener('click', () => goTo(i));
+    thumbsWrap.appendChild(thumb);
+  });
+
+  const stageImgs = stage.querySelectorAll('img');
+  const dotEls = dotsWrap.querySelectorAll('.dot');
+  const thumbEls = thumbsWrap.querySelectorAll('.thumb');
+
+  function goTo(index) {
+    stageImgs[current].classList.remove('active');
+    dotEls[current].classList.remove('active');
+    thumbEls[current].classList.remove('active');
+
+    current = (index + images.length) % images.length;
+
+    stageImgs[current].classList.add('active');
+    dotEls[current].classList.add('active');
+    thumbEls[current].classList.add('active');
+    thumbEls[current].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    counter.textContent = `${current + 1} / ${images.length}`;
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+
+  // swipe support
+  let touchStartX = 0;
+  const stageEl = document.getElementById('stage');
+  stageEl.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  stageEl.addEventListener('touchend', (e) => {
+    const dx = e.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(dx) > 40) {
+      dx < 0 ? goTo(current + 1) : goTo(current - 1);
+    }
+  }, { passive: true });
+</script>
+
+</body>
+</html>
